@@ -17,6 +17,8 @@
 
 	<link rel="stylesheet" href="{{ url('/') }}/css/plugins/adminlte.min.css">
 
+	<link rel="stylesheet" href="{{ url('/') }}/css/plugins/notie.min.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
 
@@ -33,6 +35,8 @@
 
 	<script src="{{ url('/') }}/js/plugins/adminlte.js"></script>
 
+	<script src="{{ url('/') }}/js/plugins/notie.js"></script>
+
 	<script src="{{ url('/') }}/js/plugins/jquery.overlayScrollbars.min.js"></script>
 	
 
@@ -46,11 +50,15 @@
 
 		@include('modulos\sidebar')
 
-		@include('paginas\inicio')
+		@yield('content')
 
 		@include('modulos\footer')
 
 	</div>
+
+<script src="{{url('/')}}/js/codigo.js"></script>
+
+<script src="{{url('/')}}/js/avisos.js"></script>
 
 </body>
 

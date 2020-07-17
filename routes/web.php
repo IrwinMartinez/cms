@@ -16,6 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('plantilla');
 });
+/*
+Route::view('/', 'paginas.inicio');
+Route::view('/avisos', 'paginas.aviso');
+Route::view('/noticias', 'paginas.noticia');
+Route::view('/inicio', 'paginas.inicio');
+
+Route::get('/avisos', 'AvisosController@traerAviso');
+Route::get('/noticias', 'NoticiasController@traerNoticia');
+*/
+
+Route::resource('/', 'AvisosController');
+/*Route::resource('/noticias', 'NoticiasController');*/
+Route::resource('/avisos', 'AvisosController');
+
 
 Auth::routes();
 

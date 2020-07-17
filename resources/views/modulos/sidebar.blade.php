@@ -20,39 +20,21 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-         
+
          <!--=====================================
-          Botón Blog
+          Botón Avisos
           ======================================-->
 
           <li class="nav-item">
-            <a href="{{ url("/") }}" class="nav-link">
-              <i class="nav-icon fas fa-home"></i>
-              <p>Blog</p>
+            <a href="{{ url("/avisos") }}" class="nav-link">
+              <i class="fas fa-exclamation-circle"></i>
+              <p>Avisos</p>
             </a>
           </li>
 
           <!--=====================================
-          Botón Administradores
+          Botón Noticias
           ======================================-->
-
-          <li class="nav-item">
-            <a href="{{ url("/administradores") }}" class="nav-link">
-              <i class="nav-icon fas fa-users-cog"></i>
-              <p>Administradores</p>
-            </a>
-          </li>
-          <!--=====================================
-          BOTÓN SITIO WEB
-          ======================================-->
-
-          <li class="nav-item">
-          
-            <a href="{{ substr(url("/"),0,-11) }}" class="nav-link" target="_blank">
-              <i class="nav-icon fas fa-globe"></i>
-              <p>Ver blog</p>
-            </a>
-          </li>
 
         </ul>
       </nav>
